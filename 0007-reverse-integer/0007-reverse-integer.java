@@ -6,8 +6,6 @@ class Solution {
             rev=rev*10+dig;
             x=x/10;
         }
-        System.out.println(rev);
-       
        if(-1*Math.pow(2,31)>rev || Math.pow(2,31) < rev){
             return 0;
        }
