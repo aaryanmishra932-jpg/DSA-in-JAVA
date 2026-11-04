@@ -7,8 +7,7 @@ class Solution {
 sum=sum+i;
         }
       } 
-      System.out.println(sum);
-       System.out.println(num);
+     
 
      if(sum==num)
       return true; 
