@@ -1,12 +1,12 @@
 class Solution {
     public String removeDuplicates(String s) {
        Stack<Character>st=new Stack<>();
-       char[]arr=s.toCharArray();
-       for(int i=0;i<arr.length;i++) {
-        if(!st.isEmpty()&&st.peek()==arr[i]){
+       for(int i=0;i<s.length();i++) {
+        char ch=s.charAt(i);
+        if(!st.isEmpty()&&st.peek()==ch){
             st.pop();
         }else{
-            st.push(arr[i]);
+            st.push(ch);
         }
        }
        String x="";
